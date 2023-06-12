@@ -3,10 +3,10 @@
 ### Getting started
 - Clone the repository into your code editor using a git-ready terminal as usual.
 - You will want to have some kind of Live Server extension or similar way of displaying index.html quickly when making changes, because we are doing this on a static site to hopefully make it a bit simpler for you.
-- About the files: the logic flows from data.js to 
+- About the files: the logic flows from data.js, where some starting data is to neuralNetwork.js, where the learning happens to plotBoundary.js, which controls what happens to the webpage.
 - Look at index.html - you will notice that there are two script tags in the file. The top one is to load the external graphing module plotly.js, while the bottom one is to take in the logic that we need to plot our processed data.
-- The plot.js is to turn data into lines on a graph. While most of the time you should just change the import file at the top depending on what you want to display, there may be helpful improvements to make further down the file too.
-- Plot.js is expecting an object containing the data required to draw a scatter graph and a line, including the title, and axis labels. The example is from [W3 Schools](https://www.w3schools.com/js/js_graphics_plotly.asp).
+- The plotBoundary.js file turns the data and your trained neural network into a graph. While most of the time you should just change the import file at the top depending on what you want to display, there may be helpful improvements to make further down the file too.
+- plotBoundary.js is expecting an object containing the data required to draw a scatter graph and a line, including the title, and axis labels. The example is from [W3 Schools](https://www.w3schools.com/js/js_graphics_plotly.asp).
 
 ### The neural network
 This task is going to get you to make a neural network from scratch. The objective here is not to try to make the most advanced thing in the world for solving real problems, but instead to learn what the fundamentals are, so that you understand how best to make the powerful ML packages work properly. If you really don't like calculus, you can skip to the next task after step 8. However, I would advise you to persist if you can, and check out the video above for an explanation that is among the clearest I have seen.
